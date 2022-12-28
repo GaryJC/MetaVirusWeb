@@ -105,6 +105,8 @@ function LiquidDis() {
         data: [820, 932, 901, 934, 1290, 1330, 1320],
       },
     ],
+    animationDuration: 3000,
+    animationDelay: 2000,
   };
   return (
     <>

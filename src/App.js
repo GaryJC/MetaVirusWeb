@@ -2,7 +2,7 @@ import "./App.css";
 import LiquidDis from "./liqDis";
 import TimeLine from "./timeline";
 import TokenDis from "./tokenDis";
-
+import TrackVisibility from "react-on-screen";
 function App() {
   return (
     <div className="App">
@@ -31,11 +31,14 @@ function App() {
       <h2 style={{ margin: "10rem 0 5rem 0", color: "white", fontSize: "2em" }}>
         Process
       </h2>
-
       <TimeLine />
       <div style={{ marginTop: "10rem" }}>
-        <TokenDis />
-        <LiquidDis />
+        <TrackVisibility once>
+          {({ isVisible }) => isVisible && <TokenDis />}
+        </TrackVisibility>
+        <TrackVisibility once>
+          {({ isVisible }) => isVisible && <LiquidDis />}
+        </TrackVisibility>
       </div>
     </div>
   );

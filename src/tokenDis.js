@@ -56,8 +56,9 @@ function TokenDis() {
           shadowBlur: 200,
           shadowColor: "rgba(0, 0, 0, 0.5)",
         },
+        animationDuration: 3000,
         animationType: "scale",
-        animationEasing: "elasticOut",
+        // animationEasing: "elasticOut",
         animationDelay: function (idx) {
           return Math.random() * 200;
         },

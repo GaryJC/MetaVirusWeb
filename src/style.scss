@@ -149,6 +149,14 @@ body {
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+  .liqChart {
+    width: 80%;
+  }
+
+  .movingBg {
+    display: none;
+  }
+
   /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
