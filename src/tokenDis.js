@@ -3,6 +3,8 @@ import ReactECharts from "echarts-for-react"; // or var ReactECharts = require('
 function TokenDis() {
   const option = {
     // backgroundColor: "#2c343c",
+    // width: 1000,
+    // height: 1000,
     title: {
       text: "Token",
       left: "center",
@@ -39,18 +41,18 @@ function TokenDis() {
         }),
         roseType: "radius",
         label: {
-          color: "rgba(255, 255, 255, 0.3)",
+          color: "rgba(255, 255, 255, 0.7)",
         },
         labelLine: {
           lineStyle: {
-            color: "rgba(255, 255, 255, 0.3)",
+            color: "rgba(255, 255, 255, 0.7)",
           },
           smooth: 0.2,
           length: 10,
           length2: 20,
         },
         itemStyle: {
-          color: "#c23531",
+          color: "#5ab7bb",
           shadowBlur: 200,
           shadowColor: "rgba(0, 0, 0, 0.5)",
         },
@@ -63,9 +65,10 @@ function TokenDis() {
     ],
   };
   return (
-    <>
-      <ReactECharts option={option} />
-    </>
+    <div className="tokenChart">
+      <h2>Token Distribution</h2>
+      <ReactECharts option={option} style={{ height: 600 }} />
+    </div>
   );
 }
 

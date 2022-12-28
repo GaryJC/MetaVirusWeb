@@ -36,7 +36,6 @@ body {
   position: relative;
   background-color: inherit;
   width: 50%;
-
   // circle
   &::after {
     content: "";
@@ -107,19 +106,19 @@ body {
     font-size: 3em;
   }
   p {
-    width: 40rem;
+    width: 40vw;
   }
   .rock {
     width: 100%;
     position: absolute;
     bottom: -4rem;
   }
-  // .movingBg {
-  //   height: 100vh;
-  //   position: absolute;
-  //   bottom: 0;
-  //   width: 100vw;
-  // }
+  .movingBg {
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 /* The actual content */
@@ -129,6 +128,23 @@ body {
   position: relative;
   border-radius: 6px;
   color: white;
+}
+
+@mixin chart {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5rem;
+  color: white;
+}
+
+.tokenChart {
+  @include chart;
+}
+
+.liqChart {
+  @include chart;
+  width: 60%;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */

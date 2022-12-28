@@ -1,9 +1,13 @@
 import ReactECharts from "echarts-for-react"; // or var ReactECharts = require('echarts-for-react');
 function LiquidDis() {
   const option = {
-    title: {
-      text: "Stacked Area Chart",
-    },
+    // title: {
+    //   text: "Stacked Area Chart",
+    //   textStyle: {
+    //     color: "#ccc",
+    //   },
+    // },
+    color: ["#a36650", "#eabe5b", "#5ab7bb", "#24e7f8", "#365254"],
     tooltip: {
       trigger: "axis",
       axisPointer: {
@@ -15,6 +19,12 @@ function LiquidDis() {
     },
     legend: {
       data: ["Email", "Union Ads", "Video Ads", "Direct", "Search Engine"],
+      itemStyle: {
+        color: "#ddd",
+      },
+      textStyle: {
+        color: "#fff",
+      },
     },
     toolbox: {
       feature: {
@@ -98,7 +108,10 @@ function LiquidDis() {
   };
   return (
     <>
-      <ReactECharts option={option} />
+      <div className="liqChart">
+        <h2>Liquidity Distribution</h2>
+        <ReactECharts option={option} />
+      </div>
     </>
   );
 }
