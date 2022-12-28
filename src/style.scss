@@ -3,7 +3,10 @@
 }
 
 body {
-  background: linear-gradient(#20282b, #42bbce);
+  // background: linear-gradient(#1e2a30, #42bbce);
+  background-color: (#1e2a30);
+  // background: linear-gradient(#42bbce #a36650);
+  // #a36650
   font-family: Helvetica, sans-serif;
 }
 
@@ -89,6 +92,34 @@ body {
   &::after {
     left: -16px;
   }
+}
+
+.econBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  h1 {
+    text-align: center;
+    font-size: 3em;
+  }
+  p {
+    width: 40rem;
+  }
+  .rock {
+    width: 100%;
+    position: absolute;
+    bottom: -4rem;
+  }
+  // .movingBg {
+  //   height: 100vh;
+  //   position: absolute;
+  //   bottom: 0;
+  //   width: 100vw;
+  // }
 }
 
 /* The actual content */
