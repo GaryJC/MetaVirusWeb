@@ -9,7 +9,7 @@ function App() {
       <div
         className="econBg"
         style={{
-          backgroundImage: "url('/img/econBg_fixed_filled.png')",
+          backgroundImage: "url('./img/econBg_fixed_filled.png')",
           height: "100vh",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -25,8 +25,8 @@ function App() {
           expetendis his, te elit voluptua dignissim per, habeo iustoprimis ea
           eam.
         </p>
-        <img className="movingBg" src="/img/econBg_move.png" alt="move" />
-        <img className="rock" src="/img/rockBg.png" alt="rock" />
+        <img className="movingBg" src="./img/econBg_move.png" alt="move" />
+        <img className="rock" src="./img/rockBg.png" alt="rock" />
       </div>
       <h2 style={{ margin: "10rem 0 5rem 0", color: "white", fontSize: "2em" }}>
         Process
