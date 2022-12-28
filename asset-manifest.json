@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MetaVirusWeb/static/css/main.9039c783.css",
-    "main.js": "/MetaVirusWeb/static/js/main.a1d6d16d.js",
+    "main.css": "/MetaVirusWeb/static/css/main.6ea6c693.css",
+    "main.js": "/MetaVirusWeb/static/js/main.2676bc9c.js",
     "static/js/787.f79636ba.chunk.js": "/MetaVirusWeb/static/js/787.f79636ba.chunk.js",
     "index.html": "/MetaVirusWeb/index.html",
-    "main.9039c783.css.map": "/MetaVirusWeb/static/css/main.9039c783.css.map",
-    "main.a1d6d16d.js.map": "/MetaVirusWeb/static/js/main.a1d6d16d.js.map",
+    "main.6ea6c693.css.map": "/MetaVirusWeb/static/css/main.6ea6c693.css.map",
+    "main.2676bc9c.js.map": "/MetaVirusWeb/static/js/main.2676bc9c.js.map",
     "787.f79636ba.chunk.js.map": "/MetaVirusWeb/static/js/787.f79636ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9039c783.css",
-    "static/js/main.a1d6d16d.js"
+    "static/css/main.6ea6c693.css",
+    "static/js/main.2676bc9c.js"
   ]
 }
